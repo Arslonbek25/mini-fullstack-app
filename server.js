@@ -7,3 +7,6 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on http://localhost:${port}`));
 
+app.get('/api/hello', (req, res) => {
+  res.json({ msg: 'Hello World' });
+});
